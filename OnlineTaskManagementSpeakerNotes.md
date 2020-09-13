@@ -133,7 +133,7 @@ Los Angeles FTC Kickoff 2020-09-13
 - SolidWorks
   - Free for FIRST students
   - Very common, NASA
-  - SolidWorks reddit
+  - SolidWorks Reddit
   - Slow on low-power computers
   - Windows
 ***Switch to face view***
@@ -171,6 +171,7 @@ Los Angeles FTC Kickoff 2020-09-13
         - Masks
         - 6' social distancing
       - Detailed schedule of everything you're building
+        - LEGO
   - Teammate's well-ventilated garage
   - Teammate's back yard with card tables
     - Weather
