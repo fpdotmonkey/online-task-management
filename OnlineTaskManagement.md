@@ -1,5 +1,5 @@
 # Remote Project Management
-Los Angeles FTC Kickoff 2020-09-06
+Los Angeles FTC Kickoff 2020-09-13
 
 Hello everybody!  My name's Fletcher Porter.  I'm a mechanical engineer, though lately I've been working on writing software with [Tetra Bio Distributed](https://tetra.bio/) to drive an open-hardware ventilator splitter that will help combat COVID-19.
 
@@ -7,7 +7,7 @@ This is my 10th year with FTC.  I spent 4 years in high school on the Suit Bots,
 
 A common question that I've been hearing since people started to realize that this season would be remote is *how are we going to build a robot?*  How do you design and build a thing when you can't be in the same room as the other people designing and building it?
 
-Broadly, it comes down to three things: communication, documentation, and compassion.
+Well, I'll share with you a few tools that I've used to do distributed development on the Tetra Ventilator Splitter, but broadly it comes down to three things: communication, documentation, and compassion.
 
 Before the quarantine, communication was relatively easy.  You would show up to your team meetings and talk about what needs to be done on the robot.  The only work you needed to do for communication was to set a time and place for the meeting.  Given the Safer at Home order, this isn't possible.  A team member a mile away may as well be 1,000 miles away.  Most of you have probably found ways to communicate with others in the last 6 months, so you might be able to find a time and place to meet, but conveying information over a call is much harder than face-to-face.  You can't read body language as well, people's mics cut in and out, and showing things to your teammates like parts that you have made is awkward and frustrating.  So to develop a communication strategy that acknowledges and attempts to overcome those difficulties is incredibly important.
 
@@ -19,7 +19,7 @@ So let's get into the meat of the presentation.  What tools can you actually use
 
 ## Kanban Board
 
-For managing the tasks you need to complete, a **kanban board** is an incredibly useful tool for communicating who's working on what and what state each task is in.  They were originally developed by an industrial engineer at Toyota in the 1950s in order to increase productivity of their production line.  They work by allowing you to visualize progress in a project and in individual components of a project in the form of cards, which represent project components, moving between various columns, which mark how far a component has progressed.
+For managing the tasks you need to complete, a **kanban board** is an incredibly useful tool for communicating who's working on what and what state each task is in.  They were originally developed by [an industrial engineer at Toyota in the 1950s](https://kanbantool.com/kanban-guide/kanban-history) in order to increase the efficiency of their production line.  They work by allowing you to visualize progress in a project and the state of individual components of a project.  The individual components are shown as *cards* which can move between *lists* or *columns* which mark the progression.
 
 [Here's one](https://github.com/tetrabiodistributed/project-tetra-display/projects/1) that I'm using for the ventilator splitter I'm working on.  When I'm planning out what work I need to do, I'll create these cards in the *Backlog* column.  Then when I'd like to get some work done, I'll move one of the cards into the *WIP* (work in progress) column.  I've got this *Blocked* column here for when I can't proceed with work on a card that I've already started because I'm waiting on work from someone else.  But when those sorts of conflicts are resolved and I finish work on a card, I move it to the *Review* column.  Then I'll ask one of my team members to take a look at my work to make sure it looks good.  This reviewer role is actually a super useful thing to have mentors do.  Their experience means that they'll be able to share with you best practices for how to do what your doing and tell you when there's an easier way to do what you're trying to do.  Finally, work goes into the *Closed* column.  It's super important to have this column rather than just deleting the cards because you can look at how much work you've finished over the course of the season.
 
@@ -41,7 +41,7 @@ There's also [Slack](https://slack.com/), which is very similar to Discord excep
 
 There's also the various instant messaging apps, all of which are good, though I've found that people tend to get annoyed by notifications they don't care about and end up muting the chat and missing important messages.
 
-For persistant communication, that is communication that you want to be easily accessible for a long time, like design, software, or outreach plans, meeting agendas and minutes, and changes in plans, [Google Docs](https://drive.google.com) is an invaluable and free tool.  You can make documents, spreadsheets, slideshows, or even flow charts.  Just make sure all your work is in a shared folder that everyone on the team can access.
+For persistent communication, that is communication that you want to be easily accessible for a long time, like design, software, or outreach plans, meeting agendas and minutes, and changes in plans, [Google Docs](https://drive.google.com) is an invaluable and free tool.  You can make documents, spreadsheets, slideshows, or even flow charts.  Just make sure all your work is in a shared folder that everyone on the team can access.
 
 ## Scheduling Meetings
 
@@ -60,7 +60,7 @@ A concern that I've heard from a lot of teams is "How are you supposed to have b
 
 ### Planning
 
-The fact that people need to meet up to build means that there needs to be quite a bit of planning going into it.  Weekly builds to just "figure it out" isn't a viable strategy when you need to minimize exposure to each other.  So I would say that drawing your robot out using a CAD program before you turn a single nut is more important than ever.
+The fact that people need to meet up to build means that there needs to be quite a bit of planning going into it.  Weekly builds to just "figure it out" are irresponsible when you need to minimize exposure to each other.  So drawing your robot out using a CAD program before you turn a single nut is more important than ever.
 
 Fortunately as students you have free access to nearly every professional-grade CAD program.
 
@@ -75,15 +75,19 @@ Prior to going to a build, you need a list of everything you're going to make at
 
 A note on getting parts together, I'd highly recommend using standard kits of parts like what's offered by goBuilda, REV, Actobotics, or Tetrix in order to reduce hassle in getting parts together.
 
+### Logistics
+
 Then there's the logistics of the build.  Where can you hold these things?  Ideally, you can meet at your school.  Assuming your school isn't in-person presently, you'd have to get permission from the school administration for you to go on campus.  It's not guaranteed, but if you show them a schedule of what exactly you're planning on building *in detail* and promise that you'll wear masks and maintain six feet social distancing, you might have a chance.
 
-Alternately, you could hold builds in a teammate's well-ventilated garage.  Failing that, you could set up card tables in a teammate's backyard (which is actually what I did for builds when I was in high school).  However, do be concious of the weather.  If it's smokey out like it is today, then a team member with asthma may have a hard time working.  If it's raining, then it's hard to work generally if there's not some sort of roof over you, especially if you're working on electronics.
+Alternately, you could hold builds in a teammate's well-ventilated garage.  Failing that, you could set up card tables in a teammate's backyard (which is actually what I did for builds when I was in high school).  However, do be conscious of the weather.  If it's smoky out like it is today, then a team member with asthma may have a hard time working.  If it's raining, then it's hard to work generally if there's not some sort of roof over you, especially if you're working on electronics.
 
 ### Execution
 
 When it comes to the build itself, the #1 thing is to wear a mask and maintain social distancing.  Building a robot isn't worth you getting COVID, nor the people you live with getting COVID, nor your teammates getting COVID.
 
-You should also consider where people can go to the bathroom at a particular location.  And when people arrive, they should probably wash their hands.  And then if the build goes over lunchtime, where will people eat in a distanced manner?  Writing this all down into a persistent document could be a very valuable excersize.
+You should also consider where people can go to the bathroom at a particular location.  And when people arrive, they should probably wash their hands.  And then if the build goes over lunchtime, where will people eat in a distanced manner?  Writing this all down into a persistent document could be a very valuable exercise.
+
+Make sure that everyone on the team knows when and where the build is, and send out reminders ahead of time, maybe on 1 week ahead of the build and 1 day ahead.
 
 Even with masks and social distancing and planning, you or some of your teammates may not be comfortable with an in-person meeting.  They or someone they live with may have an immune deficiency that makes their risk tolerance for COVID lower, or they just really don't like the idea of meeting in person during a pandemic.  Don't make showing to builds a matter dedication to the team, especially during a pandemic.
 
@@ -95,4 +99,6 @@ Between builds, where does the robot go?  Well if you're able to work at your sc
 
 ## Software and Testing
 
-The robot should get built with plenty of time prior to your first competition so that the software can get run and tested to where everything works.  The setup I can imagine would be to have a programmer take the robot home and keep it there while they work.  Other programmers can contribute to the codebase using [git](https://git-scm.com/).
+The robot should get built with plenty of time prior to your first competition so that the software can get run and tested to where everything works.  The setup I can imagine would be to have a programmer take the robot home and keep it there while they work.  Other programmers can contribute to the code base using [git](https://git-scm.com/).
+
+Thank you so much for listening.  I hope this is helpful.  The important thing in implementing all this for your team is you're thinking critically about what works and what doesn't.  If you discover something that works better than what I've suggested, I'd be super interested in hearing about it, so please feel free to email me at me@fletcherporter.com or you can let me know on Discord (fp#4309).  Now if you have any questions, I think the moderator has been pinning them throughout the talk.
